@@ -1,0 +1,44 @@
+{
+  "extends": "wesbos",
+  "rules": {
+    "prettier/prettier": [
+      "error", {
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "all"
+      }
+    ],
+    "jsx-a11y/label-has-associated-control": [ 2, {
+      "labelAttributes": ["label"],
+      "controlComponents": ["Checkbox"],
+      "depth": 3
+    }],
+    "jsx-a11y/label-has-for": [ 2, {
+      "components": [ "label" ],
+      "required": {
+          "some": [ "nesting", "id" ]
+      },
+      "allowChildren": false
+    }],
+    "indent": [
+      "error",
+      2
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "import/no-unresolved": ["off"]
+  },
+  "settings" : {
+    "import/resolver": {
+      "node": {
+        "paths": ["./"]
+      }
+    }
+  }
+}
