@@ -2,7 +2,6 @@ const deploy = require('lib/deploy')
 
 export default async function deployHandler(req, res) {
   try {
-    console.log(req.body)
     const { repo, config } = req.body
 
     const url = await deploy(repo, config)
