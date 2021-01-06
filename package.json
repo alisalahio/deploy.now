@@ -7,7 +7,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "download-package-tarball": "^1.0.7",
     "next": "latest",
     "now": "^19.0.1",
